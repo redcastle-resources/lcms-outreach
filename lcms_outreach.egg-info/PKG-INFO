@@ -1,3 +1,12 @@
+Metadata-Version: 2.4
+Name: lcms-outreach
+Version: 0.1.0
+Summary: LCMS outreach recipes for using the geeViz MCP with LCMS and TCC datasets.
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: geeViz==2026.6.2
+Requires-Dist: fastapi==0.139.0
+
 # lcms-outreach
 
 Minimal wrapper and recipe set for using the **geeViz MCP** to generate:

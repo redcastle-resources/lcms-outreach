@@ -1,0 +1,2 @@
+[console_scripts]
+lcms-outreach-mcp = lcms_outreach.mcp.server:main

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lcms-outreach"
+version = "0.1.0"
+description = "LCMS outreach recipes for using the geeViz MCP with LCMS and TCC datasets."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "geeViz==2026.6.2",
+    "fastapi==0.139.0",
+]
+
+[project.scripts]
+lcms-outreach-mcp = "lcms_outreach.mcp.server:main"
+
+[tool.setuptools.packages.find]
+include = ["lcms_outreach*"]
