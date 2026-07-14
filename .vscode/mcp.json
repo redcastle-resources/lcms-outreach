@@ -1,0 +1,14 @@
+{
+  "servers": {
+    "geeviz": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["-m", "geeViz.mcp.server"]
+    },
+    "drawio": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "drawio-mcp-server", "--editor"]
+    }
+  }
+}
