@@ -356,7 +356,7 @@ Map.addLayer(canopy,  viz_c, "Canopy Height")
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
   const map = L.map('map').setView([44.05, -121.31], 9);
-  L.tileLayer('https://server.arcgisonline.com/.../World_Imagery/MapServer/tile/<z>/<y>/<x>').addTo(map);  // use curly braces around z/y/x in the real URL
+  L.tileLayer('https://server.arcgisonline.com/.../World_Imagery/MapServer/tile/{z}/{y}/{x}').addTo(map);  // angle brackets used as placeholders above; real Leaflet URLs use curly braces like this
   fetch("REFRESH_URL_HERE").then(r => r.json()).then(data => {
     for (const [name, url] of Object.entries(data.urls)) {
       L.tileLayer(url, {opacity: 0.8}).addTo(map);
