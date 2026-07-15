@@ -583,3 +583,4 @@ For water, vegetation, snow/ice, bare ground, urban/impervious, clouds, shadows 
 | `export_image` | Set up EE batch exports. In sandbox mode, `.start()` is blocked — the user runs them locally from the downloaded code. |
 | `geeviz_search_places` | Google Places API wrapper. If a separate Google Maps MCP is loaded, prefer that one. |
 | `get_streetview` | **Disabled — do not use.** Violates Google Maps Platform ToS. |
+rrcr-rcr-
