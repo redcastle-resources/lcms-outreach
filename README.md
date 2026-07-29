@@ -1,5 +1,13 @@
 # LCMS Outreach — Workshop Notebooks
 
+<p>
+  <img src="img/lcms-icon.png" height="60" alt="LCMS"/>
+  &nbsp;&nbsp;
+  <img src="img/usfslogo.png" height="60" alt="USDA Forest Service"/>
+  &nbsp;&nbsp;
+  <img src="img/RCR-logo.jpg" height="60" alt="RedCastle Resources"/>
+</p>
+
 LCMS access and analysis content and examples, developed for the Ecological Society of America (ESA) Meeting, July 2026, Salt Lake City. 
 
 This repo contains two workshop notebooks, standalone examples, and reporting scripts demonstrating how to access and analyze the USDA Forest Service Landscape Change Monitoring System (LCMS) in Google Earth Engine (GEE) using the geeViz Python library.
