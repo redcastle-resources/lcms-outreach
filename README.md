@@ -60,7 +60,9 @@ lcms-outreach/
 │   ├── aois/                          ← Study area GeoJSON boundaries
 │   └── metadata/                      ← LCMS class lookup tables (JSON)
 │
-└── tutorials/
+└── resources/
+    ├── 20260730_ESA_Workshop_Slides.pdf  ← Slide deck presented at Ecological Society of America (ESA) Meeting, Salt Lake City, July 2026
+    ├── Housman_etal_LCMS_2026.pdf  ← Publication in Nature Scientific Data describing LCMS methods and products
     └── LCMS_v2024-10_Data_Explorer_Overview.pdf  ← LCMS Explorer GUI walkthrough
 ```
 
