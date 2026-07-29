@@ -1,6 +1,12 @@
 # LCMS Outreach — Workshop Notebooks
 
-Python notebook examples accompanying the **Accessing and Using LCMS Data** public workshop. This repo focuses on the *code-based* portion of the workshop; hands-on GUI walkthroughs are covered in the live session.
+LCMS access and analysis content and examples, developed for the Ecological Society of America (ESA) Meeting, July 2026, Salt Lake City. 
+
+This repo contains two workshop notebooks, standalone examples, and reporting scripts demonstrating how to access and analyze the USDA Forest Service Landscape Change Monitoring System (LCMS) in Google Earth Engine (GEE) using the geeViz Python library.
+
+If you are new to LCMS, start with the `notebooks/lcms_introduction.ipynb` notebook. If you are interested in a deeper dive into forest management and recovery, try the `notebooks/macdunn_harvest_recovery.ipynb` notebook.
+
+LCMS is also accessible via the [LCMS Viewer GUI](https://apps.fs.usda.gov/lcms-viewer/), the [GEE catalog](https://developers.google.com/earth-engine/datasets/catalog/USFS_GTAC_LCMS_v2025-11), and the [USFS Raster Data Gateway](https://data.fs.usda.gov/geodata/rastergateway/LCMS/index.phps).
 
 ---
 
@@ -153,7 +159,7 @@ jupyter lab
 jupyter notebook
 ```
 
-Then open a notebook from the `notebooks/` folder and run cells top-to-bottom (`Kernel → Restart & Run All`).
+Then open a notebook from the `notebooks/` folder and run cells top-to-bottom (`Kernel → Restart & Run All`). The recommendation is to start with the `lcms_introduction.ipynb` notebook, then move on to `macdunn_harvest_recovery.ipynb`.
 
 > ⚠️ **Replace `'your-project-id'`** in the Setup cell with your actual GEE Cloud project ID before running.
 
@@ -182,16 +188,20 @@ Then open a notebook from the `notebooks/` folder and run cells top-to-bottom (`
 
 ---
 
-## License
-
-Code in this repository is released under the [MIT License](LICENSE).
-LCMS data are a USDA Forest Service product; see their [data use policy](https://www.fs.usda.gov/lcms) for citation requirements.
-
 ## LCMS User Survey
 
-https://survey123.arcgis.com/share/5b82d464bf154f20931250754c24b4d2
-
+Enjoying the LCMS data and tools? Please consider filling out the [LCMS User Survey](https://survey123.arcgis.com/share/5b82d464bf154f20931250754c24b4d2) to help us improve future releases.
 
 ## LCMS Explorer Instructions
 
 See [tutorials/LCMS_v2024-10_Data_Explorer_Overview.pdf](tutorials/LCMS_v2024-10_Data_Explorer_Overview.pdf) for a step-by-step GUI walkthrough of the LCMS Data Explorer web application.
+
+## Citations
+
+### Peer-reviewed publication
+Housman, I.W., Healey, S.P., Heyer, J., Hardwick, E., Zhiqiang, Y., Ross, J., and Megown, K. Coincident maps of changing land cover, land use, and forest condition in the United States, 1985-present. Sci Data 13, 575 (2026). https://doi.org/10.1038/s41597-026-06743-0
+
+## License
+
+Code in this repository is released under the [MIT License](LICENSE).
+LCMS data are produced by RedCastle Resources and the USDA Forest Service via an enterprise agreement with Google; see their [data use policy](https://www.fs.usda.gov/lcms) for citation requirements.
