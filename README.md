@@ -1,5 +1,4 @@
 # LCMS Outreach — Workshop Notebooks
-
 <p>
   <img src="img/lcms-icon.png" height="60" alt="LCMS"/>
   &nbsp;&nbsp;
@@ -7,22 +6,21 @@
   &nbsp;&nbsp;
   <img src="img/RCR-logo.jpg" height="60" alt="RedCastle Resources"/>
 </p>
-
 LCMS access and analysis content and examples, developed for the Ecological Society of America (ESA) Meeting, July 2026, Salt Lake City. 
 
 This repo contains two workshop notebooks, standalone examples, and reporting scripts demonstrating how to access and analyze the USDA Forest Service Landscape Change Monitoring System (LCMS) in Google Earth Engine (GEE) using the geeViz Python library.
 
 If you are new to LCMS, start with the `notebooks/lcms_introduction.ipynb` notebook. If you are interested in a deeper dive into forest management and recovery, try the `notebooks/macdunn_harvest_recovery.ipynb` notebook.
 
-LCMS is also accessible via the [LCMS Viewer GUI](https://apps.fs.usda.gov/lcms-viewer/), the [GEE catalog](https://developers.google.com/earth-engine/datasets/catalog/USFS_GTAC_LCMS_v2025-11), and the [USFS Raster Data Gateway](https://data.fs.usda.gov/geodata/rastergateway/LCMS/index.phps).
+LCMS is also accessible via the [LCMS Data Explorer GUI](https://apps.fs.usda.gov/lcms-viewer/), the [GEE catalog](https://developers.google.com/earth-engine/datasets/catalog/USFS_GTAC_LCMS_v2025-11), and the [USFS Raster Data Gateway](https://data.fs.usda.gov/geodata/rastergateway/LCMS/index.php).
 
 ---
 
 ## What is LCMS?
 
-![Willamette_NF_Change.gif](images/Willamette_NF_Change.gif)
+![Willamette_NF_Change.gif](img/Willamette_NF_Change.gif)
 
-The [Landscape Change Monitoring System (LCMS)](https://www.fs.usda.gov/lcms) is an annual remote-sensing product produced by the USDA Forest Service Geospatial Technology and Applications Center (GTAC). It maps land cover, land use, and change processes across CONUS and SE Alaska at 30 m resolution from 1985 to present.
+The [Landscape Change Monitoring System (LCMS)](https://www.fs.usda.gov/lcms) is an annual remote sensing product produced by the USDA Forest Service Geospatial Office (GO). It maps land cover, land use, and change processes across CONUS, Alaska, Hawaii, Puerto Rico, and the US Virgin Islands 30 m resolution from 1985 to present.
 
 Three annual thematic products:
 
@@ -32,7 +30,7 @@ Three annual thematic products:
 | `Land_Cover` | What is physically on the ground | Trees, Shrubs, Grass/Forb/Herb, Barren, Water, Snow/Ice |
 | `Land_Use` | How the land is used or managed | Forest, Agriculture, Developed, Rangeland/Pasture, Other |
 
-GEE catalog asset: **`USFS/GTAC/LCMS/v2025-11`** (latest release; covers 1985–2025)
+GEE catalog asset: **`'projects/gtac-data-publish/assets/LCMS/Product_Version/2025-11'`** (latest release; covers 1985–2025)
 
 ---
 
@@ -69,14 +67,14 @@ lcms-outreach/
 
 ### `notebooks/lcms_introduction.ipynb`
 
-**Study area:** [H.J. Andrews Experimental Forest](https://andrewsforest.oregonstate.edu/) — a 64 km² LTER site in the western Oregon Cascades with a well-documented history of experimental and commercial timber harvest (1950s–1990s) followed by natural recovery.
+**Study area:** [H.J. Andrews Experimental Forest](https://andrewsforest.oregonstate.edu/) — a 64 km² Long Term Ecological Research (LTER) site in the western Oregon Cascades with experimental harvest in the 1950s through 70s, followed by natural recovery and watershed-specific experimentation. Check out this timeline of research and management events: [H.J. Andrews Timeline](https://andrewsforest.oregonstate.edu/sites/default/files/2023-09/Andrews_Timeline_2023.pdf).
 
 **Research question:** What can 40 years of LCMS data reveal about land cover and change at a long-term ecological research site?
 
 | Section | Analysis |
 |---------|----------|
 | 1 · Setup | GEE authentication and library imports |
-| 2 · Study Area | H.J. Andrews boundary from local GeoJSON |
+| 2 · Study Area | H.J. Andrews boundary and watersheds from local GeoJSON |
 | 3 · Load LCMS | Filter collection, inspect bands and class tables |
 | 4 · Interactive Map | geeViz map with Land Cover, Land Use, and Change layers (2025) |
 | 5 · Time Lapse | Animated slider through all three LCMS bands, 1985–2025 |
@@ -140,7 +138,7 @@ Scripts in `reporting/` demonstrate using LCMS data with the geeViz `Report` API
 ### Prerequisites
 
 - A **Google Earth Engine account** — [sign up free](https://earthengine.google.com/signup/)
-- A **GEE Cloud Project** — [create one](https://developers.google.com/earth-engine/guides/access/cloud_projects) (free for non-commercial use)
+- A **GEE Cloud Project** — [create one](https://developers.google.com/earth-engine/guides/access/cloud_projects) (free for non-commercial use, but with computation limits)
 - Python ≥ 3.9
 
 ### Install dependencies
@@ -186,28 +184,31 @@ Then open a notebook from the `notebooks/` folder and run cells top-to-bottom (`
 
 ## LCMS Data Access
 
-- [LCMS Viewer (GUI)](https://apps.fs.usda.gov/lcms-viewer/) — explore LCMS data without code
-- [LCMS GEE catalog page](https://developers.google.com/earth-engine/datasets/catalog/USFS_GTAC_LCMS_v2025-11)
-- [LCMS Raster Data Download](https://data.fs.usda.gov/geodata/rastergateway/LCMS/index.phps) — bulk download of LCMS GeoTIFFs. Downloads are also available via the LCMS Viewer GUI and the GEE catalog.
+- [LCMS Data Explorer (GUI)](https://apps.fs.usda.gov/lcms-viewer/) — explore LCMS data without code
+- [LCMS Base Learner Explorer (GUI)](https://lcms-viewer.fs2c.usda.gov/lcms-base-learner​) — explore the change detection models and composites used to build LCMS
+- [LCMS in the GEE Publisher Catalog](https://developers.google.com/earth-engine/datasets/catalog/USFS_GTAC_LCMS_v2025-11) - view and access LCMS data in GEE
+- [USFS Raster Data Gateway](https://data.fs.usda.gov/geodata/rastergateway/LCMS/index.phps) — bulk download of LCMS GeoTIFFs. Downloads are also available via the LCMS Viewer GUI and the GEE catalog.
 
 ## Additional Resources
-- [geeViz documentation](https://github.com/redcastle-resources/geeViz)
-- [USFS GTAC website](https://www.fs.usda.gov/about-agency/gtac)
-- [Training for Building LCMS](https://github.com/redcastleresources/lcms-training) — a separate repo with example notebooks for building LCMS products in GEE
+- [LCMS Home page](https://lcms-viewer.fs2c.usda.gov/) - Official LCMS site with links to data, methods, and documentation
+- [geeViz documentation](https://github.com/redcastle-resources/geeViz) - Python library for visualizing and analyzing data in GEE
+- [geeViz MCP documentation](https://geeviz.org/mcp) - Info for setting up a model context protocol (MCP) to facilitate natural-language prompting for GEE analysis
+- [Training for Building LCMS](https://github.com/redcastleresources/lcms-training) — a separate repo with example notebooks for building LCMS products in GEE. Originally delivered at Geo for Good 2023.
 
 ---
 
-## LCMS User Survey
 
-Enjoying the LCMS data and tools? Please consider filling out the [LCMS User Survey](https://survey123.arcgis.com/share/5b82d464bf154f20931250754c24b4d2) to help us improve future releases.
-
-## LCMS Explorer Instructions
+## LCMS Data Explorer Instructions
 
 See [tutorials/LCMS_v2024-10_Data_Explorer_Overview.pdf](tutorials/LCMS_v2024-10_Data_Explorer_Overview.pdf) for a step-by-step GUI walkthrough of the LCMS Data Explorer web application.
 
 ## Methods
 
 Methods | [LCMS v2025-11 Methods](https://data.fs.usda.gov/geodata/rastergateway/LCMS/LCMS_v2025-11_Methods.pdf)
+
+## LCMS User Survey
+
+Enjoying the LCMS data and tools? Please consider filling out the [LCMS User Survey](https://survey123.arcgis.com/share/5b82d464bf154f20931250754c24b4d2) to help us improve future releases.
 
 ## Citations
 
@@ -216,5 +217,5 @@ Housman, I.W., Healey, S.P., Heyer, J., Hardwick, E., Zhiqiang, Y., Ross, J., an
 
 ## License
 
-Code in this repository is released under the [MIT License](LICENSE).
+Code in this repository is released under the [Apache License 2.0](LICENSE).
 LCMS data are produced by RedCastle Resources and the USDA Forest Service via an enterprise agreement with Google; see their [data use policy](https://www.fs.usda.gov/lcms) for citation requirements.
