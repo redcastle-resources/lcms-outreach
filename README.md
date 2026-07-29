@@ -20,7 +20,7 @@ Three annual thematic products:
 
 | Band | Description | Key Classes |
 |------|-------------|-------------|
-| `Change` | The dominant change process | Wildfire, Insect/Disease, Tree Removal, Successional Growth, Stable, … |
+| `Change` | The dominant change process | Wildfire, Insect/Disease, Tree Removal, Vegetation Gain, Stable, … |
 | `Land_Cover` | What is physically on the ground | Trees, Shrubs, Grass/Forb/Herb, Barren, Water, Snow/Ice |
 | `Land_Use` | How the land is used or managed | Forest, Agriculture, Developed, Rangeland/Pasture, Other |
 
@@ -185,6 +185,7 @@ Then open a notebook from the `notebooks/` folder and run cells top-to-bottom (`
 ## Additional Resources
 - [geeViz documentation](https://github.com/redcastle-resources/geeViz)
 - [USFS GTAC website](https://www.fs.usda.gov/about-agency/gtac)
+- [Training for Building LCMS](https://github.com/redcastleresources/lcms-training) — a separate repo with example notebooks for building LCMS products in GEE
 
 ---
 
@@ -195,6 +196,10 @@ Enjoying the LCMS data and tools? Please consider filling out the [LCMS User Sur
 ## LCMS Explorer Instructions
 
 See [tutorials/LCMS_v2024-10_Data_Explorer_Overview.pdf](tutorials/LCMS_v2024-10_Data_Explorer_Overview.pdf) for a step-by-step GUI walkthrough of the LCMS Data Explorer web application.
+
+## Methods
+
+Methods | [LCMS v2025-11 Methods](https://data.fs.usda.gov/geodata/rastergateway/LCMS/LCMS_v2025-11_Methods.pdf)
 
 ## Citations
 
