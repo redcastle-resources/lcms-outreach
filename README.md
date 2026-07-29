@@ -1,16 +1,19 @@
-# LCMS Outreach — Workshop Notebooks
+# LCMS Outreach — Data Access and Analysis in Google Earth Engine
 <p>
   <img src="img/lcms-icon.png" height="60" alt="LCMS"/>
   &nbsp;&nbsp;
   <img src="img/usfslogo.png" height="60" alt="USDA Forest Service"/>
   &nbsp;&nbsp;
-  <img src="img/RCR-logo.jpg" height="60" alt="RedCastle Resources"/>
+  <img src="img/rcr-logo-new.png" height="60" alt="RedCastle Resources"/>
 </p>
-LCMS access and analysis content and examples, developed for the Ecological Society of America (ESA) Meeting, July 2026, Salt Lake City. 
+
+LCMS data access and analysis. Notebooks and examples, developed for the Ecological Society of America (ESA) Meeting, July 2026, Salt Lake City. 
 
 This repo contains two workshop notebooks, standalone examples, and reporting scripts demonstrating how to access and analyze the USDA Forest Service Landscape Change Monitoring System (LCMS) in Google Earth Engine (GEE) using the geeViz Python library.
 
 If you are new to LCMS, start with the `notebooks/lcms_introduction.ipynb` notebook. If you are interested in a deeper dive into forest management and recovery, try the `notebooks/macdunn_harvest_recovery.ipynb` notebook.
+
+Keep an eye out for additional comments, or submit requests for examples using Issues or pull requests. We welcome contributions and feedback!
 
 LCMS is also accessible via the [LCMS Data Explorer GUI](https://apps.fs.usda.gov/lcms-viewer/), the [GEE catalog](https://developers.google.com/earth-engine/datasets/catalog/USFS_GTAC_LCMS_v2025-11), and the [USFS Raster Data Gateway](https://data.fs.usda.gov/geodata/rastergateway/LCMS/index.php).
 
