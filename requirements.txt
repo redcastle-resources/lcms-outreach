@@ -4,13 +4,6 @@ earthengine-api>=1.7.9
 # USFS GTAC visualization toolkit (includes plotly, pandas, requests)
 geeViz>=2024.10.0
 
-# Geometry operations (dissolve/union for local GeoJSON preprocessing)
-shapely>=2.0.0
-
-# Cecil — GEE-free access to LCMS and other datasets
-# Sign up at https://docs.cecil.earth/quickstart, then set CECIL_API_KEY
-cecil>=0.1.0
-
 # Jupyter environment
 jupyter>=1.0.0
 jupyterlab>=4.0.0
