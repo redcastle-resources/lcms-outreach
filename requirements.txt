@@ -1,8 +1,13 @@
 # Core GEE client
 earthengine-api>=1.7.9
 
-# USFS GTAC visualization toolkit (includes plotly, pandas, requests)
+# USFS GO visualization toolkit (includes plotly, pandas, requests)
 geeViz>=2024.10.0
+
+# Optional dependencies for figure viz and data analysis
+tabulate>=0.10.0
+tables>=3.8.0
+sqlalchemy>=2.0.0
 
 # Jupyter environment
 jupyter>=1.0.0
